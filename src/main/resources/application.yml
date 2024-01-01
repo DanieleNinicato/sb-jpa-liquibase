@@ -2,6 +2,11 @@ server:
   port: 8082
 
 spring:
+  jackson:
+    serialization:
+      indent_output: true
+  config:
+    name: spring-boot-liquibase
   datasource:
     url: jdbc:h2:mem:testdb
     driverClassName: org.h2.Driver
